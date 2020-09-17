@@ -3,15 +3,15 @@ def walk(direction, position):
   if direction == "e":
     position += 1
   
-  if direction == "n":
+  elif direction == "n":
     position += 10
 
-  if direction == "w":
+  elif direction == "w":
     position -= 1
 
-  if direction == "s":
+  elif direction == "s":
     position -= 10
-  else:
+  elif direction != "e" or direction != "n" or direction != "w" or direction != "s":
     print("invalid input")
   
   return position
